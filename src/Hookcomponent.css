@@ -1,0 +1,24 @@
+
+
+/*button{
+    margin-left: 200px;
+    width: 100px;
+    background:linear-gradient(90deg, rgb(167, 126, 163) 0%, rgb(205, 122, 155) 35%, rgba(0,212,255,1) 100%);
+    color:black;
+    gap:10px;
+}*/
+button{
+    gap:50px;
+    width: 100px;
+    height:40px;
+    
+}
+button:hover{
+    background:linear-gradient(90deg, rgb(177, 120, 188) 0%, rgb(230, 97, 186) 35%, rgb(183, 235, 244) 100%);
+    color:rgb(10, 8, 8);
+    border: 1px solid white;
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
