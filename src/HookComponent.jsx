@@ -4,6 +4,7 @@ import "./Hookcomponent.css"
 
 const HookComponent = () => {
   const [count, setCount] = useState(0);
+ 
   
 
     return (
@@ -13,6 +14,7 @@ const HookComponent = () => {
      <button onClick={() => setCount(count - 1)}>Decrement</button>
      <button onClick={() => setCount(0)}>Reset</button>
     </div>
+   
   );
 }
 export default HookComponent;
