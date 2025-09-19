@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import task from './task.jsx'
+
 
 // import ClassComponent from "./ClassComponent"
 //  import FunctionComponent from "./FunctionComponent"
 
- import HookComponent from "./HookComponent"
+//  import HookComponent from "./HookComponent"
 // import Name from './Name'
 // import Email from './Email'
 // import Phone from './Phone'
@@ -25,7 +27,9 @@ function App() {
 
   return (
     <>
-    <HookComponent/>
+    {/* <HookComponent/> */}
+    <task/>
+
     {/* <Form/> 
      <div>
 
