@@ -3,6 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import task from './task.jsx'
 
+ import { useEffect } from 'react';
+
+
+
+
 
 // import ClassComponent from "./ClassComponent"
 //  import FunctionComponent from "./FunctionComponent"
@@ -24,11 +29,8 @@ import task from './task.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
-
-  return (
-    <>
     {/* <HookComponent/> */}
-    <task/>
+    {/* <task/> */}
 
     {/* <Form/> 
      <div>
@@ -56,10 +58,18 @@ function App() {
     <br/>
     <br/>
     <Reset/> 
+ <FunctionComponent />  */}
+  const [x, setx] = useState(0);
+  useEffect(() => {
+    console.log("useEffect called");
+  }, [x]);
 
-      <FunctionComponent />  */}
+  return (
+    <>
+      <h1>Value of x is : {x}</h1>
+      <button onClick={() => setx(x + 1)}>Increment x</button>
+      <useEffect />
     </>
-  )
+  );
 }
-
-export default App
+export default App;
