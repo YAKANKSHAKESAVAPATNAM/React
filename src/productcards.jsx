@@ -1,27 +1,12 @@
 import React from "react";
-import hair1 from "./assets/hair1.png";
-import hair2 from "./assets/hair2.png";
-import hair3 from "./assets/hair3.png";
+import IMG from "./assets/react.svg";
+import './Product.css';
 function ProductCards() {
-    const Data=[
-        {
-        'ID':"1",
-        'Name':"React",
-        'Version':"18.2.0",
-        'Author':"Meta"
-        },
-        {
-        'ID':"2",
-        'Name':"Vite",
-        'Version':"4.3.9",
-        'Author':"Evan You"
-        },
-        {
-        'ID':"3",
-        'Name':"Vue",
-        'Version':"3.2.47",
-        'Author':"Evan You"
-        }
+    const Data = [
+        { ID :'1',Image: IMG, Price: 1100, Brand: "FaceWash" , Description: "Dummy Info about Facewash"},
+    { ID :'2',Image: IMG, Price: 1200, Brand: "Shampoo",Description: "Dummy Info about shampoo" },
+    { ID :'3',Image: IMG, Price: 1300, Brand: "Accessories",Description: "Dummy Info about Accessories" }
+
     ]
     return(
         <div className="parent">
@@ -41,8 +26,7 @@ function ProductCards() {
                     )
                 })
             }
-          </div>
-    );
+        </div>
+    )
 }
-
 export default ProductCards;

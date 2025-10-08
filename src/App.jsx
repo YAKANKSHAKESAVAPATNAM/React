@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-// import task from './task.jsx'
-// import './App.css';
-import ToDoList from './ToDoList.jsx';
- import ProductCards from './productcards.jsx';
-  import ProductInfo from './productinfo.jsx';
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+// // import task from './task.jsx'
+// // import './App.css';
+// import ToDoList from './ToDoList.jsx';
+//  import ProductCards from './productcards.jsx';
+//   import ProductInfo from './productinfo.jsx';
 
 //  import { useEffect } from 'react';
 
@@ -25,7 +25,7 @@ import ToDoList from './ToDoList.jsx';
 
 
 
-function App() {
+//function App() {
   // const [count, setCount] = useState(0)
     {/* <HookComponent/> */}
     {/* <task/> */}
@@ -58,7 +58,7 @@ function App() {
     <Reset/> 
 
  <FunctionComponent />  */}
- <ToDoList/>
+
 
 //  const [CompleteData, setCompleteData] = useState([
 //   {
@@ -154,7 +154,7 @@ function App() {
 //   }, [search, CompleteData]);
 
 
- return (
+ //return (
       
 //       <>
 //        <input type="text" placeholder="Search..."
@@ -194,9 +194,53 @@ function App() {
   //     <useEffect />
   //   </>
 
-   <ProductCards/>
-);
+   //<ProductCards/>
+// );
 
   
+// }
+// export default App;
+
+
+///for products task
+// import React from 'react';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import ProductCards from './ProductCards';
+// import ProductsInfo from './ProductsInfo';
+
+// function App() {
+//   return (
+//     <>
+//       <BrowserRouter>
+//         <Routes>
+         
+//           <Route path="/" element={<ProductCards />} /> 
+//           <Route path="/product-info/:ID" element={<ProductsInfo />} />
+          
+//         </Routes>
+//       </BrowserRouter>
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+//for image upload task
+import React, { useState } from "react";
+import { BrowserRouter ,Route,Routes} from "react-router-dom";
+
+import Image from "./Image.jsx";
+
+function App() {
+  return (
+    <>
+
+      <Image />
+    </>
+  );
 }
+
 export default App;
+
+
