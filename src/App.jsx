@@ -203,44 +203,51 @@
 
 
 ///for products task
-// import React from 'react';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import ProductCards from './ProductCards';
-// import ProductsInfo from './ProductsInfo';
-
+// import React, { useState } from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Form1 from "./Form1";
+// import View from "./View";
+// import Header from "./Header";
+// import  Tilty from "./Tilty"
 // function App() {
-//   return (
-//     <>
-//       <BrowserRouter>
-//         <Routes>
-         
-//           <Route path="/" element={<ProductCards />} /> 
-//           <Route path="/product-info/:ID" element={<ProductsInfo />} />
-          
-//         </Routes>
-//       </BrowserRouter>
-//     </>
+  // const [dataList, setDataList] = useState([]);
+  // return (
+    // <Router>
+    //   <Routes>
+    //     <Route path="/" element={<Header dataList={dataList} setDataList={setDataList} />} />
+    //     <Route
+    //       path="/Form1"
+    //       element={<Form1 dataList={dataList} setDataList={setDataList} />}
+    //     />
+    //     <Route
+    //       path="/View"
+    //       element={<View dataList={dataList} setDataList={setDataList} />}
+    //     />
+    //   </Routes>
+    // </Router>
 //   );
 // }
 
 // export default App;
 
 
-//for image upload task
-import React, { useState } from "react";
-import { BrowserRouter ,Route,Routes} from "react-router-dom";
+import React from "react";
+import Addons from "./Addons";
+import Toastify from "./Toastify";
+// import './Header.css'
+import LoaderSpinner from "./Loader-Spinner";
+import Confetti from "./Confetti";
+import SlickCarousel from "./Slick-Cursol";
 
-import Image from "./Image.jsx";
 
 function App() {
   return (
-    <>
-
-      <Image />
-    </>
+    // <Addons />
+    // <Confetti />
+    // <Toastify />
+    // <LoaderSpinner />
+    <SlickCarousel />
   );
 }
 
 export default App;
-
-
