@@ -254,19 +254,44 @@
 
 
 
-import React from 'react';
-import { UserProvider } from './UseContext';
-import Component1 from './Component1';
-import Component2 from './Component2';
+// import React from 'react';
+// import { UserProvider } from './UseContext';
+// import Component1 from './Component1';
+// import Component2 from './Component2';
 
+// function App() {
+//     return (
+//         <UserProvider>
+//             <div style={{ textAlign: 'center', marginTop: '50px' ,color:'green', fontFamily: 'Arial, sans-serif' ,border: '2px solid #a5e155ff', padding: '20px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}}>
+//                 <Component1 />
+//                 <Component2 />
+//             </div>
+//         </UserProvider>
+//     );
+// }
+// export default App;
+import React from 'react';
+
+import Donut from './Donut';
+import Column from './Column';
+import Academic from './Academic';
+import AverageSalary from './Averagesalary';
+import Skills from './Skills';
+import Apexchart from './Apexchart';
+import SalaryTable from './SalaryTable';
+// import './App.css';
+// import './Areagraph.css';
 function App() {
     return (
-        <UserProvider>
-            <div style={{ textAlign: 'center', marginTop: '50px' ,color:'green', fontFamily: 'Arial, sans-serif' ,border: '2px solid #a5e155ff', padding: '20px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}}>
-                <Component1 />
-                <Component2 />
-            </div>
-        </UserProvider>
+        <>
+        {/* <Apexchart />
+        <AverageSalary />
+        <Donut />
+        <Column />
+        <Skills />
+        <Academic /> */}
+        <SalaryTable />
+        </>
     );
 }
 export default App;
